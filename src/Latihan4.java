@@ -46,77 +46,63 @@ public class Latihan4 extends javax.swing.JFrame {
         Ok = new javax.swing.JButton();
         Hapus = new javax.swing.JButton();
         Exit = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        setBackground(new java.awt.Color(255, 102, 204));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel1.setText("Biodata Siswa");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(160, 0, 120, 50);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 120, 50));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel2.setText("Nama");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(30, 50, 50, 17);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 50, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel3.setText("Absen");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(30, 100, 50, 17);
-        getContentPane().add(Nama);
-        Nama.setBounds(100, 50, 180, 30);
-        getContentPane().add(Absen);
-        Absen.setBounds(100, 90, 180, 30);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 50, -1));
+        getContentPane().add(Nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 180, 30));
+        getContentPane().add(Absen, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 180, 30));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel4.setText("Jurusan");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(30, 140, 70, 17);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 70, -1));
 
         buttonGroup9.add(rpl);
         rpl.setText("RPL");
-        getContentPane().add(rpl);
-        rpl.setBounds(100, 140, 70, 23);
+        getContentPane().add(rpl, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 70, -1));
 
         buttonGroup9.add(tkj);
         tkj.setText("TKJ");
-        getContentPane().add(tkj);
-        tkj.setBounds(180, 140, 110, 23);
+        getContentPane().add(tkj, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 110, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel5.setText("Hobi");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(30, 170, 50, 17);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 50, -1));
 
         cb1.setText("Programing");
-        getContentPane().add(cb1);
-        cb1.setBounds(100, 170, 100, 23);
+        getContentPane().add(cb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 170, 100, -1));
 
         cb2.setText("Animator");
-        getContentPane().add(cb2);
-        cb2.setBounds(100, 190, 100, 23);
+        getContentPane().add(cb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 100, -1));
 
         cb3.setText("Teknisi");
-        getContentPane().add(cb3);
-        cb3.setBounds(210, 170, 90, 23);
+        getContentPane().add(cb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 90, -1));
 
         cb4.setText("Designer");
-        getContentPane().add(cb4);
-        cb4.setBounds(210, 190, 90, 23);
+        getContentPane().add(cb4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 90, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel6.setText("Hasil");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(20, 240, 100, 20);
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 100, 20));
 
         TA.setColumns(20);
         TA.setRows(5);
         jScrollPane1.setViewportView(TA);
 
-        getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(60, 256, 310, 110);
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 256, 310, 110));
 
         Ok.setText("Submit");
         Ok.addActionListener(new java.awt.event.ActionListener() {
@@ -124,8 +110,7 @@ public class Latihan4 extends javax.swing.JFrame {
                 OkActionPerformed(evt);
             }
         });
-        getContentPane().add(Ok);
-        Ok.setBounds(60, 220, 65, 23);
+        getContentPane().add(Ok, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
 
         Hapus.setText("Hapus");
         Hapus.addActionListener(new java.awt.event.ActionListener() {
@@ -133,8 +118,7 @@ public class Latihan4 extends javax.swing.JFrame {
                 HapusActionPerformed(evt);
             }
         });
-        getContentPane().add(Hapus);
-        Hapus.setBounds(150, 220, 70, 23);
+        getContentPane().add(Hapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 70, -1));
 
         Exit.setText("Exit");
         Exit.addActionListener(new java.awt.event.ActionListener() {
@@ -142,24 +126,10 @@ public class Latihan4 extends javax.swing.JFrame {
                 ExitActionPerformed(evt);
             }
         });
-        getContentPane().add(Exit);
-        Exit.setBounds(240, 220, 70, 23);
+        getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 220, 70, -1));
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 153));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 410, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(-10, 0, 410, 380);
+        jPanel1.setBackground(new java.awt.Color(255, 102, 204));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 480, 400));
 
         setBounds(0, 0, 416, 413);
     }// </editor-fold>//GEN-END:initComponents
@@ -261,7 +231,7 @@ public class Latihan4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton rpl;
     private javax.swing.JRadioButton tkj;
